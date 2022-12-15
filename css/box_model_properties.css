@@ -1,0 +1,11 @@
+.box{
+  width: 200px;
+  height: 200px;
+  border: 15px solid red;
+  background-color: green;
+  margin: 15px;
+  padding: 15px;
+  box-sizing: border-box; /*summation of all box model properties to fit in given width and height*/
+}
+
+/*vertical spacing between top and bootom b/w two div's is xollapsed by browsers that's why it's a best practice to use margin to seperate element and padding whn to increase gap b/w border and the content.*/
