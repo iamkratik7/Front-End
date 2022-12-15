@@ -1,0 +1,18 @@
+/*as we have seen targetting elements with multiple different selectors in the same class is not a good preactice let's improve css below */
+
+section {
+  height: 70vh;
+  border: 1px solid black;
+}
+
+p {
+  color: blue !important; /* !important will make this up above all in prority making it most specific even than id's*/
+}
+
+.red {
+  color: red;
+}
+
+#title {
+  color: chocolate;
+}

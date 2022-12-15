@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+/* case 1 the tag which comes afterwords will have more priority*/
+p{
+  color: red;
+}
+p{
+  color: lightblue;  /*this will be output for both p tag*/
+} 
+
+/*case 2 add classes to tag for more specificity*/
+
+.red{
+  color: red;
+}
+.blue{
+  color: blue;
+}
+
+/* case 3 even now if we write p tag after these classes , the styles inside it won't work because classes are more specific than general dom element as shown below*/
+
+p{
+  color: green; /* these style will not work as classes above are more specific contradicting case for case 1 above*/
+}
+
+/* case 4 ID's are more priority than classes as a result we will now have green title and magenta subtitle despite above styles written. */
+
+#title{
+  color: green;
+}
+
+#sub-title{
+  color: magenta;
+}
+
+/* case 5 Same ID which has been targeted afterward will have more priority or more specific for example if we target title now with different style color , then that will be our final color*/
+
+#title{
+  color: lightsalmon; /* similar to case 1 afterward effect*/
+}
+
+/* Note: Pretty much use classes for everything and Use ID's only for sections of our page*/
+
+
+/*Use of id in sections*/
+
+section{
+  height: 70vh;
+  border: 1px solid black;
+}
+
+/* case 6 we can be more specific by writing the element before it's class as shown below. It will have more priority than just simple class and even when we write only class afterwards , see below*/
+
+
+p.blue{
+  color: darkkhaki; /*this is more specific and we can see the results on p tag with class blue if we remove above sub-title id as it is also having id so definitely id's are more specific than classes */
+}  
+
+p{
+  color:  darkkhaki;  /*even coming afterwards it will not work because we above defined exact class of the element that we want to target*/
+}
+
+
+/*There are some different ways also for targetting an elemnt with different specificity such as BEM Styling */

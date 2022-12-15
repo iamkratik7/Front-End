@@ -1,0 +1,36 @@
+section {
+  height: 70vh;
+  border: 1px solid black;
+}
+
+
+p{
+  color: blue; /*least priority among all*/ 
+}
+
+.red{
+  color: red;  /*more prior than generic dom elements*/
+}
+
+p.red{
+  color: hotpink; /*more prior than only classes ,  when we have tag written before class*/
+}
+
+.first_para.red{
+  color: green; /*two classes for same element targetted like this will have more priority  */
+} 
+
+#title{
+  color: chocolate;       /*ID's will have more priority*/
+}
+
+#title.first_para.red{
+  color: yellow;  /*id along with classes mentioned after will have more priority than just id only*/
+}
+
+
+/*however targetting elements with multiple different selectors in the same class is not a good preactice */
+
+
+
+
