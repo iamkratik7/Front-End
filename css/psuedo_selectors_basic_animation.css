@@ -1,0 +1,53 @@
+/*pseudo elements*/
+
+div::after {
+  content: " Kratik Bhatt";
+}
+/*added content after welcome to*/
+
+div::before {
+  content: "Hello!";
+}
+
+/*added content before welcome to*/
+
+/*pseudo class*/
+
+div {
+  transition: background-color 555ms;
+}
+
+/*always write transition in parent not pseudo class it will have smooth effect both in and out*/
+
+div:hover {
+  background-color: rgb(185, 236, 185);
+}
+
+/*when we hover it will turn background green, Also we don't need any content property to be defined for pseudo classes like pseudo elements after and before because these are basically classes accept when we are on hover */
+
+button{
+animation: float 2200ms infinite alternate-reverse; /*basic animation*/
+ transition: all 555ms;
+}
+
+button:hover{
+  background-color: black;
+  color: aqua;
+  font-size: larger;
+}
+
+/*basic animation using keyframe*/
+
+@keyframes float {
+  0%{
+      transform: translateY(0);
+  }
+  100%{
+      transform: translateY(20px);
+  }
+}
+
+
+
+
+
