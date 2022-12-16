@@ -1,0 +1,18 @@
+/*
+B stands for block it could be any massive name of the section like header nav footer main etc.
+
+E stands for element and it is totally dependent on block for e.g. when the block is footer then element might be link
+which is anchor.
+
+M stands for modifier which means if link is visited then turn it purple from blue like that.
+
+*/
+
+.nav_links{
+  color: black;
+}
+
+.nav_links--active{
+  color: purple;
+  font-weight: bold;
+}
