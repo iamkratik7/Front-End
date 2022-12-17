@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  align-items: center;
+  padding: 0px 16px;
+  background-color: #cafdff;
+}
+
+header {
+  background-color: #eadcff;
+  height: calc(100vh - 70px);
+  padding: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 72px;
+}
+.subheader {
+  font-size: 36px;
+  margin: 16px 0px 24px 0px;
+}
+
+button {
+  border: none;
+  background-color: #05c7cf;
+  color: white;
+  padding: 8px 16px;
+  font-size: 24px;
+  cursor: pointer;
+  
+}
+
+.logo {
+  width: 200px;
+}
+
+a {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+}
+
+ul {
+  display: flex;
+}
+li {
+  list-style-type: none;
+  padding-left: 16px;
+}
+
+#about,
+#discord,
+#contact,
+footer {
+  padding: 48px 0px;
+}
+
+/*
+
+ABOUT
+
+*/
+
+#about {
+  background-color: #f8ffdc;
+}
+
+h2 {
+  font-size: 60px;
+  text-align: center;
+  margin: 24px;
+}
+
+.section__description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about__img--wrapper {
+  width: 40%;
+}
+img {
+  width: 100%;
+}
+
+.section__description--wrapper {
+  width: 60%;
+}
+
+.about__img--wrapper,
+.section__description--wrapper {
+  padding: 0px 24px;
+}
+
+.section__description--para {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+
+/*
+DISCORD
+*/
+
+#discord {
+  background-color: #cefeff;
+}
+.discord__img--wrapper {
+  width: 40%;
+}
+
+.discord__section--description {
+  width: 60%;
+}
+
+/*
+CONTACT
+*/
+
+#contact{
+  background-color: #dce9ff;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+
+}
+
+input , textarea{
+  margin-bottom: 24px;
+  font-size: 20px;
+  padding: 6px 12px;
+}
+
+
+/*
+CONTACT
+*/
+
+footer{
+  background-color: #aaf5ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__logo{
+  max-width: 480px;
+  margin-bottom: 16px;
+}
+
+.footer__links{
+  margin-bottom: 32px;
+}
+
+.footer__link{
+  padding: 0 16px;
+}
