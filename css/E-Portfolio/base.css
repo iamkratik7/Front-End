@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
 
 * {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -11,23 +11,48 @@ html {
   scroll-behavior: smooth;
 }
 
-h1 , h2 , h3 , h4 , h5 , h6 , span{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span {
   color: #242424;
   text-align: center;
   line-height: 1.25;
 }
 
-p{
+p {
   line-height: 1.5;
   font-size: 16px;
 }
 
-li{
+li {
   list-style-type: none;
+}
+
+.flex {
+  display: flex;
+}
+.flex-1 {
+  flex: 1;
+}
+.row {
+  width: 100%;
+  max-width: 800px;
+  margin: 0px auto;
+}
+
+.text--purple {
+  color: #6030b1;
+}
+h1 {
+  font-size: 36px;
 }
 /*Navigation Bar*/
 
-nav{
+nav {
   height: 100px;
   width: 100%;
   max-width: 1000px;
@@ -37,12 +62,11 @@ nav{
   align-items: center;
 }
 
-
-.nav__link--list{
+.nav__link--list {
   display: flex;
 }
 
-.nav__link--anchor{
+.nav__link--anchor {
   font-size: 12px;
   margin: 0px 12px;
   font-weight: 700;
@@ -50,7 +74,7 @@ nav{
   color: #242424;
 }
 
-.nav__link--anchor-primary{
+.nav__link--anchor-primary {
   color: white;
   background-color: #6030b1;
   padding: 8px 16px;
@@ -58,13 +82,58 @@ nav{
   transition: all 500ms;
 }
 
-.nav__link--anchor-primary:hover{
+.nav__link--anchor-primary:hover {
   background-color: #5d3eff;
 }
 
-.personal__logo{
+.personal__logo {
   color: #6030b1;
   margin: 0px 20px;
   font-size: 24px;
   font-weight: 700;
+}
+
+/*ABOUT ME*/
+
+#about-me {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-me__info--container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  margin: 0px auto;
+  text-align: center;
+}
+
+.about-me__picture--mask {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 60%;
+  border: 1px solid #5f30b19d;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.25);
+  margin-bottom: 28px;
+}
+
+.about-me__picture {
+  width: 100%;
+
+  /*improving my image*/
+  transform: scale(1.5);
+  padding: 2px;
+  margin-top: 22px;
+}
+
+.about-me__info--title{
+  margin-bottom: 16px;
+}
+
+.about-me__info--para {
+  font-size: 20px;
+  margin-bottom: 28px;
 }
