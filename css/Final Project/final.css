@@ -73,14 +73,33 @@ nav {
   font-weight: 600;
   color: #243e63;
   padding: 0px 0px 4px 0px;
-  transition-duration: 0.3s;
-  transition-property: border, color;
+  transition: all 100ms ease;
+}
+
+@keyframes animate-border {
+  0% {
+  border: none;
+
+  }
+  30%{
+    border-bottom: calc(1px/2) solid #6415ff;
+  }
+  70%{
+    border-bottom: 1px solid #6415ff;
+  }
+  100% {
+    border-bottom: 2px solid #6415ff;
+    
+  }
 }
 
 .nav__link:hover {
   cursor: pointer;
   color: #6415ff;
-  border-bottom: 2px solid #6415ff;
+  animation: animate-border 150ms ease-in-out; 
+  animation-fill-mode:forwards;
+  transition: all 100ms ease;
+
 }
 
 .nav__link--secondary {
